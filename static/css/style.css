@@ -1,0 +1,75 @@
+/* Estilos básicos restaurados y simplificados */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #dddddd;
+    color: #666666;
+}
+
+.wrapper {
+    max-width: 1366px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+/* Top bar (Corralon San Fernando / Horarios / Teléfono) */
+.top-bar {
+    background: #fdbe33;
+    padding: 8px 0 14px 0;   /* más compacta pero con espacio abajo */
+}
+
+.top-bar .logo h1 {
+    margin: 0;
+    font-size: 35px;         /* más chico para que no se corte */
+    line-height: 1.1;
+    color: #030f27;
+    font-weight: 700;
+}
+
+.top-bar .top-bar-text h3 {
+    margin: 0;
+    font-size: 14px;
+    color: #030f27;
+}
+
+.top-bar .top-bar-text p {
+    margin: 0;
+    font-size: 12px;
+    color: #030f27;
+}
+
+@media (max-width: 991.98px) {
+    .top-bar .logo {
+        text-align: center;
+    }
+
+    .top-bar .logo h1 {
+        font-size: 26px;
+    }
+}
+
+/* Navbar */
+.nav-bar {
+    background: #030f27;
+}
+
+.nav-bar .navbar {
+    padding: 8px 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #fdbe33;
+}
+
+/* Espacio entre navbar y el resto del body (carrusel) */
+.carousel {
+    margin-top: 16px;
+}
+
+
