@@ -36,7 +36,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
-                                <a href="index.html">
+                                <a href="{% url 'index' %}">
                                     <h1>Corralon San Fernando</h1>
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
                                 </a>
@@ -64,7 +64,7 @@
                                         </div>
                                         <div class="top-bar-text">
                                             <h3>Telefono</h3>
-                                            <p>+54 3624724766</p>
+                                            <p><a href="https://wa.me/543624724766" target="_blank" rel="noopener noreferrer" style="color: #030f27; text-decoration: none;">+54 3624724766</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -75,7 +75,7 @@
                                         </div>
                                         <div class="top-bar-text">
                                             <h3>Email</h3>
-                                            <p>info@example.com</p>
+                                            <p>corralonsanfernando@hotmail.com</p>
                                         </div>
                                     </div>
                                 </div>
@@ -90,7 +90,7 @@
             <div class="nav-bar">
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                        <a href="#" class="navbar-brand">MENU</a>
+                        <a href="#" class="navbar-brand"></a>
                         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -108,29 +108,13 @@
             <!-- Nav Bar End -->
             
             
-            <!-- Page Header Start -->
-            <div class="page-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2>Contact Us</h2>
-                        </div>
-                        <div class="col-12">
-                            <a href="">Home</a>
-                            <a href="">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Page Header End -->
-
 
             <!-- Contact Start -->
             <div class="contact wow fadeInUp">
                 <div class="container">
                     <div class="section-header text-center">
-                        <p>Get In Touch</p>
-                        <h2>For Any Query</h2>
+                        <p>Póngase en Contacto</p>
+                        <h2>Para Cualquier Consulta</h2>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
@@ -138,22 +122,22 @@
                                 <div class="contact-item">
                                     <i class="flaticon-address"></i>
                                     <div class="contact-text">
-                                        <h2>Location</h2>
-                                        <p>123 Street, New York, USA</p>
+                                        <h2>Ubicación</h2>
+                                        <p><a href="https://maps.app.goo.gl/TyH1h9TVQstmYYPq5" target="_blank" rel="noopener noreferrer" style="color: #0f8bf0; text-decoration: none;">Calle Alemania 575, Resistencia, Chaco</p>
                                     </div>
                                 </div>
                                 <div class="contact-item">
                                     <i class="flaticon-call"></i>
                                     <div class="contact-text">
-                                        <h2>Phone</h2>
-                                        <p>+012 345 67890</p>
+                                        <h2>Teléfono</h2>
+                                        <p><a href="https://wa.me/543624724766" target="_blank" rel="noopener noreferrer" style="color: #0f8bf0; text-decoration: none;">3624 - 420815</a></p>
                                     </div>
                                 </div>
                                 <div class="contact-item">
                                     <i class="flaticon-send-mail"></i>
                                     <div class="contact-text">
                                         <h2>Email</h2>
-                                        <p>info@example.com</p>
+                                        <p><a href="mailto:corralonsanfernando@hotmail.com" target="_blank" rel="noopener noreferrer" style="color: #0f8bf0; text-decoration: none;">corralonsanfernando@hotmail.com</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -163,23 +147,23 @@
                                 <div id="success"></div>
                                 <form name="sentMessage" id="contactForm" novalidate="novalidate">
                                     <div class="control-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                        <input type="text" class="form-control" id="name" placeholder="Su Nombre" required="required" data-validation-required-message="Por favor ingrese su nombre" />
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                        <input type="email" class="form-control" id="email" placeholder="Su Email" required="required" data-validation-required-message="Por favor ingrese su email" />
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                        <input type="text" class="form-control" id="subject" placeholder="Asunto" required="required" data-validation-required-message="Por favor ingrese un asunto" />
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group">
-                                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                        <textarea class="form-control" id="message" placeholder="Mensaje" required="required" data-validation-required-message="Por favor ingrese su mensaje"></textarea>
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div>
-                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
+                                        <button class="btn" type="submit" id="sendMessageButton">Enviar Mensaje</button>
                                     </div>
                                 </form>
                             </div>
@@ -194,71 +178,52 @@
             <div class="footer wow fadeIn" data-wow-delay="0.3s">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-lg-3">
+                        <div class="col-md-6 col-lg-4">
                             <div class="footer-contact">
-                                <h2>Office Contact</h2>
-                                <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
-                                <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
-                                <p><i class="fa fa-envelope"></i>info@example.com</p>
+                                <h2>Dirección y Contacto</h2>
+                                <p><i class="fa fa-map-marker-alt"></i> Calle Alemania 575, Resistencia, Chaco</p>
+                                <p><i class="fa fa-phone-alt"></i> <a href="https://wa.me/543624724766" target="_blank" rel="noopener noreferrer" style="color: #a69494; text-decoration: none;">3624 - 420815</a></p>
+                                <p><i class="fa fa-envelope"></i>corralonsanfernando@hotmail.com</p>
                                 <div class="footer-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-youtube"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.instagram.com/corralonsanfernando/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3">
+                        <div class="col-md-6 col-lg-4">
                             <div class="footer-link">
-                                <h2>Services Areas</h2>
-                                <a href="">Building Construction</a>
-                                <a href="">House Renovation</a>
-                                <a href="">Architecture Design</a>
-                                <a href="">Interior Design</a>
-                                <a href="">Painting</a>
+                                <h2>Áreas de Servicios</h2>
+                                <a href="{% url 'service' %}">Materiales Básicos</a>
+                                <a href="{% url 'service' %}">Estructuras y Aceros</a>
+                                <a href="{% url 'service' %}">Pisos y Revestimientos</a>
+                                <a href="{% url 'service' %}">Aberturas y Ferretería</a>
+                                <a href="{% url 'service' %}">Electricidad y Plomería</a>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3">
+                        <div class="col-md-6 col-lg-4">
                             <div class="footer-link">
-                                <h2>Useful Pages</h2>
-                                <a href="">About Us</a>
-                                <a href="">Contact Us</a>
-                                <a href="">Our Team</a>
-                                <a href="">Projects</a>
-                                <a href="">Testimonial</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="newsletter">
-                                <h2>Newsletter</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu
-                                </p>
-                                <div class="form">
-                                    <input class="form-control" placeholder="Email here">
-                                    <button class="btn">Submit</button>
-                                </div>
+                                <h2>Enlaces Útiles</h2>
+                                <a href="{% url 'index' %}">Inicio</a>
+                                <a href="{% url 'service' %}">Servicios</a>
+                                <a href="{% url 'contact' %}">Contacto</a>
+                                <a href="{% url 'contact' %}">Solicitar Presupuesto</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="container footer-menu">
                     <div class="f-menu">
-                        <a href="">Terms of use</a>
-                        <a href="">Privacy policy</a>
-                        <a href="">Cookies</a>
-                        <a href="">Help</a>
-                        <a href="">FQAs</a>
+                        <a href="">Términos de Uso</a>
+                        <a href="">Política de Privacidad</a>
+                        <a href="">Ayuda</a>
                     </div>
                 </div>
                 <div class="container copyright">
                     <div class="row">
                         <div class="col-md-6">
-                            <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved.</p>
+                            <p>&copy; <a href="{% url 'index' %}">Corralón San Fernando</a>, Todos los derechos reservados.</p>
                         </div>
                         <div class="col-md-6">
-                            <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+                            <p>Desarrollado con dedicación para nuestros clientes</p>
                         </div>
                     </div>
                 </div>
@@ -271,20 +236,20 @@
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/slick/slick.min.js"></script>
+        <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+        <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+        <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
+        <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+        <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+        <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+        <script src="{% static 'lib/slick/slick.min.js' %}"></script>
         
         <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
+        <script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+        <script src="{% static 'mail/contact.js' %}"></script>
 
         <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+        <script src="{% static 'js/main.js' %}"></script>
     </body>
 </html>
